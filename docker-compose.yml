@@ -1,0 +1,20 @@
+services:
+  askdata-api:
+    build: ./backend
+    container_name: askdata-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/data:/app/data
+    env_file:
+      - ./backend/.env
+    restart: unless-stopped
+
+  askdata-web:
+    build: ./frontend
+    container_name: askdata-web
+    ports:
+      - "3000:80"
+    depends_on:
+      - askdata-api
+    restart: unless-stopped
