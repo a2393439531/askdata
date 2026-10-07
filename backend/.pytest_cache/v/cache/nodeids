@@ -1,0 +1,14 @@
+[
+  "tests/test_api.py::test_ask_no_template_match",
+  "tests/test_api.py::test_ask_reject_irrelevant",
+  "tests/test_api.py::test_ask_template_match",
+  "tests/test_api.py::test_audit_written",
+  "tests/test_api.py::test_export_csv",
+  "tests/test_api.py::test_forbidden_for_operator",
+  "tests/test_api.py::test_login_fail",
+  "tests/test_api.py::test_login_success",
+  "tests/test_api.py::test_me",
+  "tests/test_api.py::test_scope_filter_operator",
+  "tests/test_api.py::test_template_execute",
+  "tests/test_api.py::test_user_self_delete_protected"
+]
